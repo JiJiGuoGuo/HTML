@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>反馈信息</title>
+<link rel="stylesheet" href="css/style07.css" type="text/css">
+</head>
+<body>
+<div class="bg">
+<a href='demo.html'><strong>返回主页</strong></a>
+    <form action="#" method="get" autocomplete="off">
+    <h2>向我们反馈你的信息</h2>
+    <p><span>你的邮箱：</span><input type="text" name="user_name" value="myemail@163.com"/>（必须填写）</p>
+    <p><span>真实姓名：</span><input type="text" name="real_name"  pattern="^[\u4e00-\u9fa5]{0,}$" placeholder="例如：王明" required autofocus/>（必须填写，只能输入汉字）</p>
+    <p><span>真实年龄：</span><input type="number" name="real_lage" value="24" min="15" max="120" required/>（必须填写）</p>
+    <p><span>出生日期：</span><input type="date" name="birthday" value="1990-10-1" required/>（必须填写）</p>
+    <p><span>电子邮箱：</span><input type="email" name="myemail" placeholder="123456@126.com" required multiple/>（必须填写）</p>
+    <p><span>手机号码：</span><input type="tel" name="telphone" pattern="^\d{11}$" required/>（必须填写）</p>
+    </p>
+    <p class="lucky"><span>幸运颜色：</span><input type="color" name="lovecolor" value="#fed000"/>（请选择你喜欢的颜色）</p>
+    <p><span>写下留言：</span></p>
+<textarea class="textarea"></textarea>
+    <p class="btn">
+    <input type="submit" value="提交"/>
+    <input type="reset" value="重置"/>
+    </p>
+    </form>
+
+</div>
+</body>
+</html>
